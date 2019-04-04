@@ -1,9 +1,11 @@
 require 'pry'
-katz_deli = []
+
 
 # I want the line to just have numbers, not names 
 # the numbers should start at 618
 # the current line should start with [616, 617]
+
+katz_deli = []
 
 def line
   if katz_deli.count > 0 
