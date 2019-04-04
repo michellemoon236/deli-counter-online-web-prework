@@ -1,7 +1,11 @@
 require 'pry'
 katz_deli = []
 
-def line (katz_deli)
+# I want the line to just have numbers, not names 
+# the numbers should start at 618
+# the current line should start with [616, 617]
+
+def line
   if katz_deli.count > 0 
     queue = "The line is currently:"
     katz_deli.each_with_index do |name, index|
@@ -15,18 +19,18 @@ def line (katz_deli)
 end
 
 
-def take_a_number (katz_deli, new_person)
+def take_a_number
   katz_deli = katz_deli.push(new_person)
   puts "Welcome, #{new_person}. You are number #{katz_deli.size} in line."
 end
 
-def now_serving (katz_deli)
+def now_serving
   if katz_deli.count > 0 
     puts "Currently serving #{katz_deli[0]}."
     katz_deli = katz_deli.shift
-else 
-  puts "There is nobody waiting to be served!"
-end
+  else 
+    puts "There is nobody waiting to be served!"
+  end
 end
 
 binding.pry 
