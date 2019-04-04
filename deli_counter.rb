@@ -29,7 +29,7 @@ else
 end
 end
 
-
+binding.pry 
 
 # katz_deli = []
 
